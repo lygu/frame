@@ -1,9 +1,9 @@
 var views = require("./views");
-var handle = {
-    "^$":views.index,
+module.exports = urlsHandler;
+
+var urlsHandler = {
+    "^/$":views.index,
     "^/index":views.index,
     "^/start":views.start,
     "^/html":views.html
 };
-
-exports.handle = handle;
